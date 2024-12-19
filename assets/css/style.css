@@ -1,0 +1,231 @@
+body {
+    margin: 0; /* Menghapus margin dari elemen body */
+    font-family: Arial, sans-serif; /* Font utama yang digunakan adalah Arial dan sans-serif */
+}
+
+.header {
+    background: #fcf7eb; /* Memberikan warna background */
+    padding-bottom: 20px; /* Memberikan ruang kosong sebesar 20px di bagian bawah elemen header */
+}
+
+.top-bar {
+    display: flex; /* Menggunakan tata letak Flexbox untuk elemen agar dapat diatur dengan lebih fleksibel */
+    justify-content: space-between; /* Memberikan jarak yang merata antar elemen */
+    align-items: center; /* Membuat elemen berada ditengah */
+    padding: 20px; /* Memberikan ruang kosong sebesar 20px disemua sisi */
+    position: relative; /* Mengatur posisi elemen menjadi relatif */
+}
+
+.contact {
+    font-size: 14px; /* Mengubah font size */
+    color: #555; /* Memberikan warna teks */
+}
+
+.logo {
+    position: absolute; /* Mengatur posisi elemen menjadi absolute */
+    left: 50%; /* Setting logo ke 50% dari lebar elemen induknya */
+    transform: translateX(-50%); /* Membuat elemen logo berada di tengah secara horizontal */
+    font-size: 20px; /* Mengubah font size */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    text-align: center; /* Membuat teks menjadi berada ditengah secara horizontal*/
+}
+
+.auth {
+    position: relative; /* Mengatur posisi elemen menjadi relatif */
+    font-size: 14px; /* Mengubah font size */
+    cursor: pointer; /* Menampilkan kursor (tangan) saat kursor diarahkan ke elemen. */
+}
+
+.auth-dropdown {
+    display: none; /* Menyembunyikan elemen */
+    position: absolute; /* Mengatur posisi elemen menjadi absolute */
+    top: 100%;  /* Setting ke 100% dari panjang elemen induknya */
+    right: 0; /* Setting logo ke 0% dari lebar elemen induknya */
+    background-color: white; /* Memberikan warna background */
+    border: 1px solid #ddd; /* Memberikan border ukurannya 1px */
+    border-radius: 5px; /* Menambahkan efek rounded pada sudut */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan disekitar elemen */
+    z-index: 1000; /* Setting tumpukan elemen. */
+}
+
+.auth-dropdown a {
+    display: block; /* Setting agar lebar digunakan seluruhnya. */
+    padding: 10px 20px; /* Menambahkan ruang didalam elemen. 10px untuk atas dan bawah. 20px untuk kiri kanan */
+    text-decoration: none; /* Menghilangkan dekorasi teks */
+    color: #333; /* Memberikan warna teks */
+}
+
+.auth-dropdown a:hover {
+    background-color: #f0f0f0; /* Memberikan warna background */
+}
+
+.auth:hover .auth-dropdown {
+    display: block; /* Setting agar lebar digunakan seluruhnya. */
+}
+
+.menu-bar {
+    text-align: center; /* Membuat teks menjadi berada ditengah secara horizontal*/
+    padding: 10px 0; /* Menambahkan ruang didalam elemen. 10px untuk atas dan bawah. 0px untuk kiri kanan */
+    background: #fcf7eb; /* Memberikan warna background */
+}
+
+.menu-bar a {
+    text-decoration: none; /* Menghilangkan dekorasi teks */
+    color: #333; /* Memberikan warna teks */
+    margin: 0 15px; /* Menambahkan jarak antar elemen. 0px untuk atas dan bawah. 15px untuk kiri kanan */
+    font-size: 16px; /* Mengubah font size */
+    padding: 10px 15px; /* Menambahkan ruang didalam elemen. 10px untuk atas dan bawah. 15px untuk kiri kanan */
+    color: #000; /* Memberikan warna teks */
+    transition: background-color 0.3s, color 0.3s; /* Memberikan efek highlight ketika kursor diarahkan ke elemen */
+}
+
+.menu-bar a.active {
+    background-color: #007bff; /* Memberikan warna background */
+    color: #fff; /* Memberikan warna teks */
+    border-radius: 5px; /* Menambahkan efek rounded pada sudut */
+}
+
+.menu-bar a:hover {
+    background-color: #0056b3; /* Memberikan warna background */
+    color: #007bff; /* Memberikan warna teks */
+}
+
+.info-box {
+    display: flex; /* Menggunakan tata letak Flexbox untuk elemen agar dapat diatur dengan lebih fleksibel */
+    align-items: center; /* Membuat elemen berada ditengah */
+    padding: 20px; /* Memberikan ruang kosong sebesar 20px disemua sisi */
+    background-color: #f8f9fa; /* Memberikan warna background */
+    border: 1px solid #ddd; /* Memberikan border ukurannya 1px */
+    border-radius: 10px; /* Menambahkan efek rounded pada sudut */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan disekitar elemen */
+    margin-bottom: 15px; /* Memberikan jarak bawah dengan elemen lain */
+}
+
+.info-box .icon {
+    font-size: 30px; /* Mengubah font size */
+    color: #007bff; /* Memberikan warna teks */
+    margin-right: 15px; /* Memberikan jarak kanan dengan elemen lain */
+}
+
+.info-box h4 {
+    margin: 0; /* Menhapus jarak kanan antar elemen disemua sisi */
+    font-size: 18px; /* Mengubah font size */
+    color: #333; /* Memberikan warna teks */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+.info-box p {
+    margin: 5px 0 0; /* Menambahkan jarak antar elemen. 5px untuk atas dan bawah. 0px untuk kiri kanan */
+    font-size: 14px; /* Mengubah font size */
+    color: #555; /* Memberikan warna teks */
+}
+
+.info-container {
+    margin-top: 40px; /* Memberikan jarak atas dengan elemen lain */
+    justify-content: center; /* Memberikan elemen menjadi ketengah secara horizontal */
+    align-items: center; /* Membuat elemen berada ditengah */
+    flex-wrap: wrap; /* Mewadahi elemen ke baris baru */
+    gap: 15px; /* Memberikan jarak antar elemen */
+}
+
+.product-container {
+    display: flex; /* Menggunakan tata letak Flexbox untuk elemen agar dapat diatur dengan lebih fleksibel */
+    justify-content: center; /* Memberikan elemen menjadi ketengah secara horizontal */
+    gap: 20px; /* Memberikan jarak antar elemen */
+    padding: 20px; /* Memberikan ruang kosong sebesar 20px disemua sisi */
+    flex-wrap: wrap; /* Mewadahi elemen ke baris baru */
+    margin-top: 20px; /* Memberikan jarak atas dengan elemen lain */
+}
+
+.product-box {
+    background-color: white; /* Memberikan warna background */
+    border-radius: 10px; /* Menambahkan efek rounded pada sudut */
+    text-align: center; /* Membuat elemen berada ditengah */
+    padding: 20px; /* Memberikan ruang kosong sebesar 20px disemua sisi */
+    margin-bottom: 20px; /* Memberikan jarak bawah dengan elemen lain */
+}
+
+.product-box img {
+    border-radius: 10px; /* Menambahkan efek rounded pada sudut */
+    max-width: 100%; /* Mengatur lebar gambar agar tidak melebihi 100% */
+    height: auto; /* Mengatur tinggi gambar tetap proposional */
+}
+
+.product-box h5 {
+    margin-top: 15px; /* Memberikan jarak atas dengan elemen lain */
+    font-size: 18px; /* Mengubah font size */
+    color: #333; /* Memberikan warna teks */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+.product-box p {
+    font-size: 14px; /* Mengubah font size */
+    color: #777; /* Memberikan warna teks */
+}
+
+.product-card {
+    background-color: #fff; /* Memberikan warna background */
+    border: 1px solid #ddd; /* Memberikan border ukurannya 1px */
+    border-radius: 10px; /* Menambahkan efek rounded pada sudut */
+    text-align: center;  /* Membuat elemen berada ditengah */
+    padding: 15px; /* Memberikan ruang kosong sebesar 15px disemua sisi */
+    margin-bottom: 20px; /* Memberikan jarak bawah dengan elemen lain */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Menambahkan bayangan disekitar elemen */
+    transition: transform 0.3s, box-shadow 0.3s; /* Memberikan efek highlight ketika kursor diarahkan ke elemen */
+}
+
+.product-card:hover {
+    transform: translateY(-10px); /* Geser elemen ke atas sebesar 10px saat kursor ke elemen */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Menambahkan bayangan disekitar elemen */
+}
+
+.product-img img {
+    max-width: 100%; /* Mengatur lebar gambar agar tidak melebihi 100% */
+    height: auto; /* Mengatur tinggi gambar tetap proposional */
+    border-radius: 5px; /* Menambahkan efek rounded pada sudut */
+    margin-bottom: 10px; /* Memberikan jarak bawah dengan elemen lain */
+}
+
+.product-info h5 {
+    font-size: 16px; /* Mengubah font size */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+    margin: 10px 0; /* Setting margin atas dan bawah 10px lalu 0px kiri kanan */
+    color: #333; /* Memberikan warna teks */
+}
+
+.product-info p {
+    font-size: 14px; /* Mengubah font size */
+    color: #666; /* Memberikan warna teks */
+    margin: 0; /* Menghapus margin */
+}
+
+.product-info .price {
+    color: #ff9900; /* Memberikan warna teks */
+    font-weight: bold; /* Membuat teks menjadi tebal */
+}
+
+.product-info-row-rekomen {
+    display: flex; /* Menggunakan tata letak Flexbox untuk elemen agar dapat diatur dengan lebih fleksibel */
+    gap: 10px; /* Memberikan jarak antar elemen */
+}
+
+.product-img-rekomen img {
+    max-width: 100px; /* Mengatur lebar gambar agar tidak melebihi 100% */
+    height: auto; /* Mengatur tinggi gambar tetap proposional */
+}
+
+.product-info-rekomen {
+    display: flex; /* Menggunakan tata letak Flexbox untuk elemen agar dapat diatur dengan lebih fleksibel */
+    flex-direction: column;  /* Mengubah arah konten menjadi atas ke bawah */
+    text-align: left; /* Membuat teks menjadi berada dikiri secara horizontal*/
+}
+
+.footer {
+    text-align: center; /* Membuat elemen berada ditengah */
+    margin-top: 20px; /* Memberikan jarak atas dengan elemen lain */
+    font-size: 14px; /* Mengubah font size */
+    border-top: 1px solid #444; /* Memberikan border atas ukurannya 1px */
+    padding-top: 20px; /* Menambahkan ruang didalam elemen. 10px untuk atas. */
+    padding-bottom: 20px; /* Memberikan ruang kosong sebesar 20px di bagian bawah elemen header */
+    background: #fcf7eb; /* Memberikan warna background */
+}
