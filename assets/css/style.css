@@ -229,3 +229,30 @@ body {
     padding-bottom: 20px; /* Memberikan ruang kosong sebesar 20px di bagian bawah elemen header */
     background: #fcf7eb; /* Memberikan warna background */
 }
+
+.login-section {
+    background-color: white; /* Memberikan warna background */
+    min-height: 100vh; /* Setting minimal height */
+}
+
+.card {
+    border-radius: 15px; /* Menambahkan efek rounded pada sudut */
+}
+
+.form-control {
+    border-radius: 5px; /* Menambahkan efek rounded pada sudut */
+    box-shadow: none; /* Menghilangkan bayangan */
+}
+
+a {
+    text-decoration: none; /* Menghilangkan dekorasi teks */
+}
+
+a:hover {
+    text-decoration: underline; /* Memberikan underline ketika kurson mengarah ke elemen */
+}
+
+.register-section {
+    background-color: white; /* Memberikan warna background */
+    min-height: 100vh; /* Setting minimal height */
+}
