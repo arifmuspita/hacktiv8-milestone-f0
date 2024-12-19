@@ -10,25 +10,50 @@
 <body>
     <header class="header"> <!-- Membuat bagian atas website dengan tag header dan class header -->
         <div class="container top-bar"> <!-- Set pada baris pertama header dengan container dan class top-bar -->
-            <div class="contact">📞 Telp : +62 812 3456 7890</div> <!-- Tag div dengan class contact untuk menampilkan kontak pada bagian kiri -->
+            <div class="contact d-none d-md-block">📞 Telp : +62 812 3456 7890</div> <!-- Tag div dengan class contact untuk menampilkan kontak pada bagian kiri -->
             <div style="flex: 1;"></div> <!-- Membuat jarak antar tag -->
             <div class="logo">Toko Wak</div> <!-- Tag div dengan class logo untuk menampilkan logo atau nama toko ditengah -->
             <div style="flex: 1;"></div> <!-- Membuat jarak antar tag -->
-            <div class="auth"> <!-- Tag div untuk menampilkan menu akun pada bagian kanan-->
+            <div class="auth d-none d-md-block"> <!-- Tag div untuk menampilkan menu akun pada bagian kanan-->
                 👤 Akun <!-- Ikon dan teks -->
                 <div class="auth-dropdown"> <!-- Dropdown akun -->
-                    <a href="#">Registrasi</a> <!-- Tag a berupa button untuk halaman registrasi -->
-                    <a href="#">Masuk</a> <!-- Tag a berupa button untuk halaman masuk -->
+                    <a href="register.html">Registrasi</a> <!-- Tag a berupa button untuk halaman registrasi -->
+                    <a href="login.html">Masuk</a> <!-- Tag a berupa button untuk halaman masuk -->
                 </div>
             </div>
         </div>
-        <!-- Baris 2 -->
-        <nav class="menu-bar"> <!-- Tag Nav pembuka dengan class menu-bar untuk navigasi menu bar -->
-            <a href="index.html">Beranda</a> <!-- Tag a berupa button untuk halaman Beranda -->
-            <a href="produk.html">Produk</a> <!-- Tag a berupa button untuk halaman Product -->
-            <a href="galeri.html">Galeri</a> <!-- Tag a berupa button untuk halaman Galeri -->
-            <a href="tentangkami.html">Tentang Kami</a> <!-- Tag a berupa button untuk halaman Tentang Kami -->
-            <a href="kontakkami.html">Kontak Kami</a> <!-- Tag a berupa button untuk halaman Kontak Kami -->
+
+        <nav class="navbar navbar-expand-lg navbar-light"> <!-- Tag Nav pembuka -->
+            <div class="container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarNav"> <!-- Menu tetap di tengah -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Beranda</a> <!-- Tag a berupa button untuk halaman Beranda -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="produk.html">Produk</a> <!-- Tag a berupa button untuk halaman Product -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="galeri.html">Galeri</a> <!-- Tag a berupa button untuk halaman Galeri -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="tentangkami.html">Tentang Kami</a> <!-- Tag a berupa button untuk halaman Tentang Kami -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="kontakkami.html">Kontak Kami</a> <!-- Tag a berupa button untuk halaman Kontak Kami -->
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link" href="register.html">Registrasi</a> <!-- Tag a berupa button untuk halaman register -->
+                        </li>
+                        <li class="nav-item d-block d-lg-none">
+                            <a class="nav-link" href="login.html">Masuk</a> <!-- Tag a berupa button untuk halaman masuk -->
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </header>
 
@@ -104,18 +129,18 @@
     </div>
 
     <div class="container"> <!-- Tag div dengan class untuk menampung seluruh bagian produk. -->
-        <div class="row product-container flex-nowrap"> <!-- Tag div dengan class row untuk membuka membuat baris produk. class flex-nowrap untuk memastikan item-item produk tidak menumpuk dan berada tetap dalam satu baris. -->
-            <div class="col-md-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. -->
+        <div class="row"> <!-- Tag div dengan class row untuk membuka membuat baris produk. class flex-nowrap untuk memastikan item-item produk tidak menumpuk dan berada tetap dalam satu baris. -->
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. -->
                 <img src="assets/img/1-8-24-Battle-Moonz-TI-SNOW-3-1733719293.jpg"> <!-- Gambar produk pertama -->
                 <h5>BattleMoonz-TI SNOW</h5> <!-- Tag H5 menampilkan judul informasi. -->
                 <p>(3 items)</p> <!-- Tag P menampilkan deskripsi. -->
             </div>
-            <div class="col-md-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. -->
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. -->
                 <img src="assets/img/Battlestar-Race2-0004-1-copy-1713245604.jpg"> <!-- Gambar produk kedua -->
                 <h5>BattleStar Race</h5> <!-- Tag H5 menampilkan judul informasi. -->
                 <p>(2 items)</p> <!-- Tag P menampilkan deskripsi. -->
             </div>
-            <div class="col-md-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. --> 
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4 product-box"> <!-- Kolom dengan lebar 4 kolom pada layar medium ke atas. --> 
                 <img src="assets/img/intelcorei9.jpg"> <!-- Gambar produk ketiga -->
                 <h5>Intel Core i9 14900KS</h5> <!-- Tag H5 menampilkan judul informasi. -->
                 <p>(5 items)</p> <!-- Tag P menampilkan deskripsi. -->
@@ -126,7 +151,7 @@
     <div class="container"> <!-- Tag div dengan class untuk menampung seluruh bagian produk. -->
         <h2 class="text-center mb-4">Recommended For You</h2> <!-- Judul dengan posisi di tengah dan class mb-4 untuk memberikan margin bawah. -->
         <div class="row"> <!-- Tag div dengan class row untuk membuka membuat baris produk. -->
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6"> <!-- Kolom produk dengan kelas grid responsif. -->
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4"> <!-- Kolom produk dengan kelas grid responsif. -->
                 <div class="product-card"> <!-- Tag div dengan class product-card digunakan untuk produk. -->
                     <div class="product-info-row-rekomen"> <!-- Tag open div informasi produk yang direkomendasikan. -->
                         <div class="product-img-rekomen"> <!-- Tag div dengan class product-img-rekomen untuk gambar. -->
@@ -140,7 +165,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -154,7 +179,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -169,7 +194,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -183,7 +208,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -197,7 +222,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -212,7 +237,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -226,7 +251,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
@@ -240,7 +265,7 @@
                 </div>
             </div>
     
-            <div class="col-xl-4 col-lg-4 col-md-4 col-sm-6 col-6">
+            <div class="col-sm-6 col-md-4 col-lg-4 mb-4">
                 <div class="product-card">
                     <div class="product-info-row-rekomen">
                         <div class="product-img-rekomen">
